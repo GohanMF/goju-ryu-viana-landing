@@ -29,8 +29,8 @@ const Contact = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-4">
-                  Rua da Tradição, 123<br />
-                  4900-000 Viana do Castelo<br />
+                  R. da Sociedade de Instrução e Recreio 104<br />
+                  4900-279 Carreço<br />
                   Portugal
                 </p>
                 <Button variant="outline" size="sm">
@@ -70,16 +70,16 @@ const Contact = () => {
               </CardHeader>
               <CardContent className="space-y-3">
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Monday - Friday</span>
-                  <span className="font-medium text-primary">6:00 PM - 9:00 PM</span>
+                  <span className="text-muted-foreground">Tuesday</span>
+                  <span className="font-medium text-primary">19:00 - 20:30</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Saturday</span>
-                  <span className="font-medium text-primary">9:00 AM - 12:00 PM</span>
+                  <span className="text-muted-foreground">Thursday</span>
+                  <span className="font-medium text-primary">19:00 - 20:30</span>
                 </div>
                 <div className="flex justify-between text-sm">
-                  <span className="text-muted-foreground">Sunday</span>
-                  <span className="font-medium text-primary">Closed</span>
+                  <span className="text-muted-foreground">Friday</span>
+                  <span className="font-medium text-primary">19:00 - 20:30</span>
                 </div>
               </CardContent>
             </Card>

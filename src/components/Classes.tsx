@@ -3,98 +3,85 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 
 const Classes = () => {
-  const classes = [
-    {
-      title: "Beginners Program",
-      level: "White to Yellow Belt",
-      description: "Perfect introduction to Goju-ryu fundamentals. Learn basic stances, blocks, and strikes while building confidence and discipline.",
-      schedule: "Mon, Wed, Fri - 7:00 PM",
-      duration: "60 minutes",
-      features: ["Basic kata", "Fundamental techniques", "Self-defense basics", "Flexibility training"]
-    },
-    {
-      title: "Intermediate Training",
-      level: "Orange to Green Belt",
-      description: "Advance your skills with complex kata, sparring fundamentals, and deeper understanding of Goju-ryu principles.",
-      schedule: "Tue, Thu, Sat - 6:30 PM",
-      duration: "75 minutes",
-      features: ["Advanced kata", "Sparring introduction", "Breathing techniques", "Partner drills"]
-    },
-    {
-      title: "Advanced Practitioners",
-      level: "Brown to Black Belt",
-      description: "Master-level training focusing on refinement, teaching skills, and the deeper philosophical aspects of martial arts.",
-      schedule: "Daily - 6:00 PM",
-      duration: "90 minutes",
-      features: ["Master kata", "Free sparring", "Teaching practice", "Philosophy study"]
-    }
-  ];
-
   return (
     <section className="py-20 px-4 bg-background">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Training Programs
+            Training Schedule
           </h2>
           <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Structured learning paths designed to guide you from your first bow to mastery, 
-            honoring the traditional progression of Goju-ryu karate.
+            Join us for traditional Goju-ryu karate training. All levels welcome - 
+            from beginners taking their first steps to advanced practitioners refining their art.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {classes.map((classInfo, index) => (
-            <Card 
-              key={index}
-              className="relative border-accent/20 shadow-soft hover:shadow-dojo transition-all duration-300 hover:scale-105 group"
-            >
-              <CardHeader className="pb-4">
-                <div className="flex justify-between items-start mb-3">
-                  <Badge variant="secondary" className="text-xs">
-                    {classInfo.level}
-                  </Badge>
-                  <div className="text-right text-sm text-muted-foreground">
-                    <div>{classInfo.duration}</div>
+        <div className="flex justify-center">
+          <Card className="max-w-2xl w-full border-accent/20 shadow-dojo">
+            <CardHeader className="text-center">
+              <CardTitle className="text-2xl text-primary mb-4">
+                Weekly Training Sessions
+              </CardTitle>
+            </CardHeader>
+            
+            <CardContent className="space-y-6">
+              <div className="grid gap-4">
+                <div className="flex items-center justify-between p-4 bg-gradient-subtle rounded-lg border border-accent/10">
+                  <div className="font-medium text-primary">Tuesday</div>
+                  <div className="text-primary">19:00 - 20:30</div>
+                </div>
+                <div className="flex items-center justify-between p-4 bg-gradient-subtle rounded-lg border border-accent/10">
+                  <div className="font-medium text-primary">Thursday</div>
+                  <div className="text-primary">19:00 - 20:30</div>
+                </div>
+                <div className="flex items-center justify-between p-4 bg-gradient-subtle rounded-lg border border-accent/10">
+                  <div className="font-medium text-primary">Friday</div>
+                  <div className="text-primary">19:00 - 20:30</div>
+                </div>
+              </div>
+
+              <div className="text-center p-6 bg-accent/5 rounded-lg border border-accent/20">
+                <h4 className="font-semibold text-primary mb-2">What You'll Learn</h4>
+                <div className="grid grid-cols-2 gap-2 text-sm text-muted-foreground">
+                  <div className="flex items-center">
+                    <div className="w-1 h-1 bg-accent rounded-full mr-2"></div>
+                    Traditional kata
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-1 h-1 bg-accent rounded-full mr-2"></div>
+                    Self-defense techniques
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-1 h-1 bg-accent rounded-full mr-2"></div>
+                    Breathing exercises
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-1 h-1 bg-accent rounded-full mr-2"></div>
+                    Physical conditioning
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-1 h-1 bg-accent rounded-full mr-2"></div>
+                    Meditation & focus
+                  </div>
+                  <div className="flex items-center">
+                    <div className="w-1 h-1 bg-accent rounded-full mr-2"></div>
+                    Traditional philosophy
                   </div>
                 </div>
-                <CardTitle className="text-xl text-primary group-hover:text-primary-glow transition-colors">
-                  {classInfo.title}
-                </CardTitle>
-              </CardHeader>
-              
-              <CardContent className="space-y-4">
-                <p className="text-muted-foreground text-sm leading-relaxed">
-                  {classInfo.description}
-                </p>
-                
-                <div className="space-y-2">
-                  <div className="font-medium text-primary text-sm">Schedule</div>
-                  <div className="text-sm text-muted-foreground">{classInfo.schedule}</div>
-                </div>
+              </div>
 
-                <div className="space-y-2">
-                  <div className="font-medium text-primary text-sm">What You'll Learn</div>
-                  <ul className="text-xs text-muted-foreground space-y-1">
-                    {classInfo.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-center">
-                        <div className="w-1 h-1 bg-accent rounded-full mr-2"></div>
-                        {feature}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-
+              <div className="text-center">
                 <Button 
-                  variant="outline" 
-                  className="w-full mt-6 group-hover:border-accent group-hover:text-accent transition-colors"
+                  variant="dojo" 
+                  size="lg"
+                  className="px-8 py-4"
                 >
-                  Learn More
+                  Join a Training Session
                 </Button>
-              </CardContent>
-            </Card>
-          ))}
+              </div>
+            </CardContent>
+          </Card>
         </div>
 
         <div className="text-center mt-12">
