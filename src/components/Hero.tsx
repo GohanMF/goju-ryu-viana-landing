@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import dojoInterior from "@/assets/dojo-interior.jpg";
+import gojuRyuLogo from "/lovable-uploads/1ef44e39-7779-4dd7-9d56-43f8a7df8e46.png";
 
 const Hero = () => {
   return (
@@ -15,6 +16,14 @@ const Hero = () => {
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="mb-8">
+          {/* Logo */}
+          <div className="mb-6">
+            <img 
+              src={gojuRyuLogo} 
+              alt="Goju-ryu Viana Dojo Logo" 
+              className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 drop-shadow-lg"
+            />
+          </div>
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-4 tracking-tight">
             <span className="block">Goju-ryu</span>
             <span className="block text-accent font-display">Viana</span>
