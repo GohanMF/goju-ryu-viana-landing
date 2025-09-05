@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
 import dojoInterior from "@/assets/dojo-interior.jpg";
 import gojuRyuLogo from "/lovable-uploads/1ef44e39-7779-4dd7-9d56-43f8a7df8e46.png";
+import { useLanguage } from "@/contexts/LanguageContext";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Hero = () => {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
@@ -13,6 +16,9 @@ const Hero = () => {
         <div className="absolute inset-0 bg-gradient-hero opacity-85"></div>
       </div>
       
+      {/* Language Switcher */}
+      <LanguageSwitcher />
+      
       {/* Content */}
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="mb-8">
@@ -20,18 +26,17 @@ const Hero = () => {
           <div className="mb-6">
             <img 
               src={gojuRyuLogo} 
-              alt="Goju-ryu Viana Dojo Logo" 
+              alt={t('common.logoAlt')}
               className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4 drop-shadow-lg"
             />
           </div>
           <h1 className="text-5xl md:text-7xl font-bold text-primary-foreground mb-4 tracking-tight">
-            <span className="block">Goju-ryu</span>
-            <span className="block text-accent font-display">Viana</span>
+            <span className="block">{t('hero.title')}</span>
+            <span className="block text-accent font-display">{t('hero.subtitle')}</span>
           </h1>
           <div className="w-24 h-1 bg-accent mx-auto mb-6"></div>
           <p className="text-xl md:text-2xl text-primary-foreground/90 mb-8 leading-relaxed max-w-2xl mx-auto">
-            Discover the ancient art of Goju-ryu Karate - where hard meets soft, 
-            tradition meets discipline, and spirit meets strength.
+            {t('hero.description')}
           </p>
         </div>
         
@@ -39,10 +44,10 @@ const Hero = () => {
         {/* Traditional Japanese motto */}
         <div className="mt-12 pt-8 border-t border-accent/30">
           <p className="text-accent font-medium text-lg mb-2">
-            剛柔流
+            {t('hero.japanese')}
           </p>
           <p className="text-primary-foreground/80 text-sm tracking-wider">
-            "The Way of Hard and Soft"
+            {t('hero.translation')}
           </p>
         </div>
       </div>

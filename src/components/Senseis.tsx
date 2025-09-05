@@ -4,44 +4,33 @@ import mainSensei from "@/assets/main-sensei.jpg";
 import sensei2 from "@/assets/sensei-2.jpg";
 import sensei3 from "@/assets/sensei-3.jpg";
 import sensei4 from "@/assets/sensei-4.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const Senseis = () => {
+  const { t } = useLanguage();
+  
   const mainSenseiData = {
-    name: "Sensei Master",
-    dan: "8th Dan",
+    name: t('senseis.mainSensei.name'),
+    dan: t('senseis.mainSensei.dan'),
     image: mainSensei,
-    title: "Head Instructor"
+    title: t('senseis.mainSensei.title')
   };
 
-  const otherSenseis = [
-    {
-      name: "Sensei João",
-      dan: "5th Dan",
-      image: sensei2
-    },
-    {
-      name: "Sensei Miguel",
-      dan: "3rd Dan", 
-      image: sensei3
-    },
-    {
-      name: "Sensei Ana",
-      dan: "4th Dan",
-      image: sensei4
-    }
-  ];
+  const otherSenseis = t('senseis.otherSenseis').map((sensei: any, index: number) => ({
+    ...sensei,
+    image: [sensei2, sensei3, sensei4][index]
+  }));
 
   return (
     <section className="py-20 px-4 bg-gradient-subtle">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            Our Senseis
+            {t('senseis.title')}
           </h2>
           <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Learn from experienced masters dedicated to preserving and teaching 
-            the authentic traditions of Goju-ryu Karate.
+            {t('senseis.description')}
           </p>
         </div>
 

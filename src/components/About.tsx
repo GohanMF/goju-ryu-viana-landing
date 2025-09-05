@@ -1,18 +1,19 @@
 import { Card, CardContent } from "@/components/ui/card";
 import karateTraining from "@/assets/karate-training.jpg";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 const About = () => {
+  const { t } = useLanguage();
   return (
     <section className="py-20 px-4 bg-gradient-subtle">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
-            The Way of Goju-ryu
+            {t('about.title')}
           </h2>
           <div className="w-16 h-1 bg-accent mx-auto mb-6"></div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Founded in Okinawa, Goju-ryu represents the perfect balance between hard and soft techniques, 
-            embodying centuries of martial arts wisdom.
+            {t('about.description')}
           </p>
         </div>
 
@@ -20,16 +21,13 @@ const About = () => {
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold text-primary mb-4">
-                Our Philosophy
+                {t('about.philosophy')}
               </h3>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Goju-ryu, meaning "hard-soft style," teaches us that true strength comes not from 
-                rigidity alone, but from the ability to adapt - to be firm when necessary and 
-                flexible when wisdom demands it.
+                {t('about.philosophyText1')}
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                At Goju-ryu Viana, we honor this ancient tradition while making it accessible 
-                to modern practitioners seeking discipline, fitness, and self-improvement.
+                {t('about.philosophyText2')}
               </p>
             </div>
 
@@ -37,9 +35,9 @@ const About = () => {
               <Card className="border-accent/20 shadow-soft hover:shadow-dojo transition-all duration-300">
                 <CardContent className="p-6 text-center">
                   <div className="text-2xl font-bold text-accent mb-2">剛</div>
-                  <h4 className="font-semibold text-primary mb-2">Go (Hard)</h4>
+                  <h4 className="font-semibold text-primary mb-2">{t('about.hard')}</h4>
                   <p className="text-sm text-muted-foreground">
-                    Strength, power, and decisive action when circumstances demand firmness.
+                    {t('about.hardDescription')}
                   </p>
                 </CardContent>
               </Card>
@@ -47,9 +45,9 @@ const About = () => {
               <Card className="border-accent/20 shadow-soft hover:shadow-dojo transition-all duration-300">
                 <CardContent className="p-6 text-center">
                   <div className="text-2xl font-bold text-accent mb-2">柔</div>
-                  <h4 className="font-semibold text-primary mb-2">Ju (Soft)</h4>
+                  <h4 className="font-semibold text-primary mb-2">{t('about.soft')}</h4>
                   <p className="text-sm text-muted-foreground">
-                    Flexibility, flowing movement, and gentle redirection of force.
+                    {t('about.softDescription')}
                   </p>
                 </CardContent>
               </Card>
@@ -59,7 +57,7 @@ const About = () => {
           <div className="relative">
             <img 
               src={karateTraining} 
-              alt="Goju-ryu karate training session"
+              alt={t('about.imageAlt')}
               className="w-full h-[500px] object-cover rounded-lg shadow-dojo"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-lg"></div>

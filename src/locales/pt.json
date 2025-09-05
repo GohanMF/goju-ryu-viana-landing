@@ -1,0 +1,81 @@
+{
+  "hero": {
+    "title": "Goju-ryu",
+    "subtitle": "Viana",
+    "description": "Descubra a arte ancestral do Karaté Goju-ryu - onde o duro encontra o suave, a tradição encontra a disciplina, e o espírito encontra a força.",
+    "japanese": "剛柔流",
+    "translation": "\"O Caminho do Duro e Suave\""
+  },
+  "about": {
+    "title": "O Caminho do Goju-ryu",
+    "description": "Fundado em Okinawa, o Goju-ryu representa o equilíbrio perfeito entre técnicas duras e suaves, incorporando séculos de sabedoria das artes marciais.",
+    "philosophy": "A Nossa Filosofia",
+    "philosophyText1": "Goju-ryu, que significa \"estilo duro-suave\", ensina-nos que a verdadeira força não vem apenas da rigidez, mas da capacidade de adaptação - ser firme quando necessário e flexível quando a sabedoria o exige.",
+    "philosophyText2": "No Goju-ryu Viana, honramos esta tradição ancestral enquanto a tornamos acessível aos praticantes modernos que procuram disciplina, fitness e auto-aperfeiçoamento.",
+    "hard": "Go (Duro)",
+    "hardDescription": "Força, poder e ação decisiva quando as circunstâncias exigem firmeza.",
+    "soft": "Ju (Suave)",
+    "softDescription": "Flexibilidade, movimento fluido e redirecionamento suave da força.",
+    "imageAlt": "Sessão de treino de karaté Goju-ryu"
+  },
+  "senseis": {
+    "title": "Os Nossos Senseis",
+    "description": "Aprenda com mestres experientes dedicados a preservar e ensinar as tradições autênticas do Karaté Goju-ryu.",
+    "mainSensei": {
+      "name": "Sensei Master",
+      "dan": "8º Dan",
+      "title": "Instrutor Principal"
+    },
+    "otherSenseis": [
+      {
+        "name": "Sensei João",
+        "dan": "5º Dan"
+      },
+      {
+        "name": "Sensei Miguel",
+        "dan": "3º Dan"
+      },
+      {
+        "name": "Sensei Ana",
+        "dan": "4º Dan"
+      }
+    ]
+  },
+  "classes": {
+    "title": "Horário de Treinos",
+    "description": "Junte-se a nós para treinos tradicionais de karaté Goju-ryu. Todos os níveis são bem-vindos - desde iniciantes a dar os primeiros passos até praticantes avançados a aperfeiçoar a sua arte.",
+    "weeklyTitle": "Sessões de Treino Semanais",
+    "tuesday": "Terça-feira",
+    "thursday": "Quinta-feira",
+    "friday": "Sexta-feira",
+    "time": "19:00 - 20:30",
+    "whatYouLearn": "O Que Vai Aprender",
+    "skills": [
+      "Kata tradicional",
+      "Técnicas de auto-defesa",
+      "Exercícios de respiração",
+      "Condicionamento físico",
+      "Meditação e foco",
+      "Filosofia tradicional"
+    ]
+  },
+  "contact": {
+    "title": "Comece a Sua Jornada",
+    "description": "Dê o primeiro passo em direção à maestria. Junte-se à comunidade do nosso dojo e descubra o poder transformador do karaté Goju-ryu.",
+    "dojoLocation": "Localização do Dojo",
+    "address": "R. da Sociedade de Instrução e Recreio 104\n4900-279 Carreço\nPortugal",
+    "getDirections": "Obter Direções",
+    "phone": "Telefone",
+    "email": "Email",
+    "trainingSchedule": "Horário de Treinos",
+    "ready": "Pronto para Começar a Treinar?",
+    "readyDescription": "Experimente uma aula experimental gratuita e descubra se o Goju-ryu é o caminho para si. Não é necessária experiência - traga apenas o seu compromisso de aprender.",
+    "contactSensei": "Contactar Sensei",
+    "followJourney": "Siga a nossa jornada",
+    "facebook": "Facebook",
+    "instagram": "Instagram"
+  },
+  "common": {
+    "logoAlt": "Logotipo do Dojo Goju-ryu Viana"
+  }
+}
