@@ -71,15 +71,6 @@ const Classes = () => {
                 </div>
               </div>
 
-              <div className="text-center">
-                <Button 
-                  variant="dojo" 
-                  size="lg"
-                  className="px-8 py-4"
-                >
-                  Join a Training Session
-                </Button>
-              </div>
             </CardContent>
           </Card>
         </div>

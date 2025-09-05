@@ -35,22 +35,6 @@ const Hero = () => {
           </p>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            variant="dojo" 
-            size="lg"
-            className="px-8 py-4 text-lg"
-          >
-            Begin Your Journey
-          </Button>
-          <Button 
-            variant="sensei" 
-            size="lg"
-            className="px-8 py-4 text-lg"
-          >
-            Learn More
-          </Button>
-        </div>
         
         {/* Traditional Japanese motto */}
         <div className="mt-12 pt-8 border-t border-accent/30">

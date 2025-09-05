@@ -122,7 +122,12 @@ const Contact = () => {
                     Follow our journey
                   </p>
                   <div className="flex justify-center gap-2">
-                    <Button variant="ghost" size="sm" className="text-accent hover:text-accent-foreground">
+                    <Button 
+                      variant="ghost" 
+                      size="sm" 
+                      className="text-accent hover:text-accent-foreground"
+                      onClick={() => window.open('https://www.facebook.com/groups/962550780453044/', '_blank')}
+                    >
                       Facebook
                     </Button>
                     <Button variant="ghost" size="sm" className="text-accent hover:text-accent-foreground">
