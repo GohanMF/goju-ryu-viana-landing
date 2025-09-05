@@ -101,14 +101,6 @@ const Contact = () => {
                 
                 <div className="space-y-4">
                   <Button 
-                    variant="dojo" 
-                    size="lg" 
-                    className="w-full text-lg py-4"
-                  >
-                    Book Free Trial Class
-                  </Button>
-                  
-                  <Button 
                     variant="sensei" 
                     size="lg" 
                     className="w-full"

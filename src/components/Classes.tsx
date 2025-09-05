@@ -75,21 +75,6 @@ const Classes = () => {
           </Card>
         </div>
 
-        <div className="text-center mt-12">
-          <Card className="inline-block border-accent/30 bg-gradient-subtle shadow-soft">
-            <CardContent className="p-6">
-              <h3 className="text-lg font-semibold text-primary mb-2">
-                Private Lessons Available
-              </h3>
-              <p className="text-muted-foreground text-sm mb-4">
-                Personalized instruction tailored to your specific goals and learning pace.
-              </p>
-              <Button variant="sensei" size="sm">
-                Contact Sensei
-              </Button>
-            </CardContent>
-          </Card>
-        </div>
       </div>
     </section>
   );
