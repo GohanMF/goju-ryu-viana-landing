@@ -22,22 +22,22 @@
     "title": "Os Nossos Senseis",
     "description": "Aprenda com mestres experientes dedicados a preservar e ensinar as tradições autênticas do Karaté Goju-ryu.",
     "mainSensei": {
-      "name": "Sensei Master",
-      "dan": "8º Dan",
+      "name": "Miguel Osório",
+      "dan": "6º Dan",
       "title": "Instrutor Principal"
     },
     "otherSenseis": [
       {
-        "name": "Sensei João",
-        "dan": "5º Dan"
-      },
-      {
-        "name": "Sensei Miguel",
+        "name": "Edmundo correia",
         "dan": "3º Dan"
       },
       {
-        "name": "Sensei Ana",
-        "dan": "4º Dan"
+        "name": "Gil Correia",
+        "dan": "2º Dan"
+      },
+      {
+        "name": "Rui Sampaio",
+        "dan": "2º Dan"
       }
     ]
   },
